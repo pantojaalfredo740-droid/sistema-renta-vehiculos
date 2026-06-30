@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Choferes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .contenedor{
+
+            width:700px;
+
+            margin:40px auto;
+
+            background:white;
+
+            padding:30px;
+
+            border-radius:10px;
+
+            box-shadow:0 0 10px gray;
+
+        }
+
+        input{
+
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+
+        }
+
+        button{
+
+            width:100%;
+            padding:12px;
+
+        }
+
+        table{
+
+            width:100%;
+            margin-top:30px;
+            border-collapse:collapse;
+
+        }
+
+        th,td{
+
+            border:1px solid gray;
+            padding:10px;
+            text-align:center;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>Registro de Choferes</h1>
+
+<input type="text" id="nombre" placeholder="Nombre">
+
+<input type="text" id="apellido" placeholder="Apellido">
+
+<input type="text" id="telefono" placeholder="Teléfono">
+
+<input type="text" id="licencia" placeholder="Número de Licencia">
+
+<input type="text" id="direccion" placeholder="Dirección">
+
+<button id="btnGuardar">Guardar Chofer</button>
+
+<h2>Choferes Registrados</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nombre</th>
+
+<th>Apellido</th>
+
+<th>Teléfono</th>
+
+<th>Licencia</th>
+
+<th>Dirección</th>
+
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaChoferes">
+
+</tbody>
+
+</table>
+
+<br>
+
+<a href="menu.html">⬅ Volver al menú</a>
+
+</div>
+
+<script src="js/choferes.js"></script>
+
+</body>
+
+</html>

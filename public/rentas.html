@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rentas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        .contenedor{
+
+            width:700px;
+
+            margin:40px auto;
+
+            background:white;
+
+            padding:30px;
+
+            border-radius:10px;
+
+            box-shadow:0 0 10px gray;
+
+        }
+
+        select,input{
+
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+
+        }
+
+        button{
+
+            padding:12px;
+            width:100%;
+
+        }
+
+        table{
+
+            width:100%;
+            margin-top:30px;
+            border-collapse:collapse;
+
+        }
+
+        th,td{
+
+            border:1px solid gray;
+            padding:10px;
+            text-align:center;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>Registro de Rentas</h1>
+
+<label>Cliente</label>
+
+<select id="cliente">
+
+    <option value="">Seleccione un cliente</option>
+
+</select>
+
+<label>Vehículo</label>
+
+<select id="vehiculo">
+
+    <option value="">Seleccione un vehículo</option>
+
+</select>
+
+<input type="date" id="fechaRenta">
+
+<input type="date" id="fechaDevolucion">
+
+<input type="number" id="total" placeholder="Total">
+
+<button id="btnGuardar">Guardar Renta</button>
+
+<h2>Rentas Registradas</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Cliente</th>
+
+<th>Vehículo</th>
+
+<th>Fecha Renta</th>
+
+<th>Fecha Devolución</th>
+
+<th>Total</th>
+
+<th>Estado</th>
+
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaRentas">
+
+</tbody>
+
+</table>
+
+<br>
+
+<a href="menu.html">⬅ Volver al menú</a>
+
+</div>
+
+<script src="js/rentas.js"></script>
+
+</body>
+
+</html>
